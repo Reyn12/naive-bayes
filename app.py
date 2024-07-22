@@ -3,11 +3,20 @@ import numpy as np
 import streamlit as st
 
 # Load dataset
-file_path = "data.csv"
-df = pd.read_csv(file_path)
+file_path = "dataset2.csv"
+df = pd.read_csv(file_path, delimiter=";")
+
+# Input pengguna untuk jumlah data yang ingin dihitung
+num_data_points = st.number_input(
+    "Masukkan jumlah data yang ingin dihitung:",
+    min_value=1,
+    max_value=len(df),
+    value=900,
+    step=1,
+)
 
 # Display first few rows of the dataframe for understanding the data
-st.write("Pratinjau Data:", df.head())
+st.write(f"Pratinjau {num_data_points} Data:", df.head(num_data_points))
 
 # Mapping kolom kategorikal ke nilai aslinya untuk ditampilkan
 original_columns = [
@@ -19,19 +28,22 @@ original_columns = [
     "Class_lunch",
 ]
 
-# Pisahkan fitur dan label
-X = df.drop(columns=["Class_lunch"])
-y = df["Class_lunch"]
+# Memilih subset data berdasarkan input pengguna
+df_subset = df.head(num_data_points)
+
+# Pisahkan fitur dan label pada subset data
+X = df_subset.drop(columns=["Class_lunch"])
+y = df_subset["Class_lunch"]
 
 # Hitung probabilitas prior
-total_count = len(df)
-class_counts = df["Class_lunch"].value_counts()
+total_count = len(df_subset)
+class_counts = df_subset["Class_lunch"].value_counts()
 prior_probabilities = class_counts / total_count
 
-# Buat DataFrame untuk menampilkan probabilitas prior
+# Buat DataFrame untuk menampilkan probabilitas prior dengan nama kolom yang diinginkan
 prior_df = pd.DataFrame(
     {
-        "Kelas": class_counts.index,
+        "Kelas": ["standar", "free/reduced"],
         "Jumlah": class_counts.values,
         "Probabilitas Prior": prior_probabilities.values,
     }
@@ -114,91 +126,93 @@ input_data = pd.DataFrame(
     }
 )
 
-if st.button("Mulai Prediksi"):
-    prediction = nb.predict(input_data)
+# Tempatkan tombol di tengah dan tambahkan lebar
+col_center = st.columns([1, 2, 1])
+with col_center[1]:
+    if st.button("Mulai Prediksi", key="predict_button", use_container_width=True):
+        prediction = nb.predict(input_data)
 
-    st.subheader("HASIL PREDIKSI : ")
-    st.markdown(
-        f"<h1 style='text-align: center; color: blue;'>{prediction[0]}</h1>",
-        unsafe_allow_html=True,
-    )
-    # Menampilkan Nilai Prior
-    st.subheader("NILAI PRIOR")
-    st.write(prior_df)
+        st.subheader("HASIL PREDIKSI : ")
+        st.markdown(
+            f"<h1 style='text-align: center; color: blue;'>{prediction[0]}</h1>",
+            unsafe_allow_html=True,
+        )
 
-    # Membuat tabel kontingensi
-    st.subheader("TABEL KONTINGENSI")
+        # Menampilkan Nilai Prior
+        st.subheader("NILAI PRIOR")
+        st.write(prior_df)
 
-    contingency_table_test_prep = pd.crosstab(
-        df["Class_lunch"], df["test preparation course"]
-    )
+        # Membuat tabel kontingensi
+        st.subheader("TABEL KONTINGENSI")
 
-    contingency_table_math_score = pd.crosstab(df["Class_lunch"], df["math score"])
+        contingency_table_test_prep = pd.crosstab(
+            df_subset["Class_lunch"], df_subset["test preparation course"]
+        )
 
-    contingency_table_reading_score = pd.crosstab(
-        df["Class_lunch"], df["reading score"]
-    )
+        contingency_table_math_score = pd.crosstab(
+            df_subset["Class_lunch"], df_subset["math score"]
+        )
 
-    contingency_table_writing_score = pd.crosstab(
-        df["Class_lunch"], df["writing score"]
-    )
+        contingency_table_reading_score = pd.crosstab(
+            df_subset["Class_lunch"], df_subset["reading score"]
+        )
 
-    col6, col7 = st.columns(2)
+        contingency_table_writing_score = pd.crosstab(
+            df_subset["Class_lunch"], df_subset["writing score"]
+        )
 
-    with col6:
-        st.write("Test Preparation Course:")
-        st.write(contingency_table_test_prep)
+        col6, col7 = st.columns(2)
 
-    with col7:
-        st.write("Math Score:")
-        st.write(contingency_table_math_score)
+        with col6:
+            st.write("Test Preparation Course:")
+            st.write(contingency_table_test_prep)
 
-    col8, col9 = st.columns(2)
+            st.write("Math Score:")
+            st.write(contingency_table_math_score)
 
-    with col8:
-        st.write("Reading Score:")
-        st.write(contingency_table_reading_score)
+        with col7:
+            st.write("Reading Score:")
+            st.write(contingency_table_reading_score)
 
-    with col9:
-        st.write("Writing Score:")
-        st.write(contingency_table_writing_score)
+            st.write("Writing Score:")
+            st.write(contingency_table_writing_score)
 
-    # Menampilkan Tabel Hasil Pelatihan
-    st.subheader("HASIL PELATIHAN")
+        # Menampilkan Tabel Hasil Pelatihan
+        st.subheader("HASIL PELATIHAN")
 
-    training_results = {
-        "parental level of education": pd.crosstab(
-            df["Class_lunch"], df["parental level of education"]
-        ).apply(lambda r: r / r.sum(), axis=1),
-        "test preparation course": pd.crosstab(
-            df["Class_lunch"], df["test preparation course"]
-        ).apply(lambda r: r / r.sum(), axis=1),
-        "math score": pd.crosstab(df["Class_lunch"], df["math score"]).apply(
-            lambda r: r / r.sum(), axis=1
-        ),
-        "reading score": pd.crosstab(df["Class_lunch"], df["reading score"]).apply(
-            lambda r: r / r.sum(), axis=1
-        ),
-        "writing score": pd.crosstab(df["Class_lunch"], df["writing score"]).apply(
-            lambda r: r / r.sum(), axis=1
-        ),
-    }
+        training_results = {
+            "parental level of education": pd.crosstab(
+                df_subset["Class_lunch"], df_subset["parental level of education"]
+            ).apply(lambda r: r / r.sum(), axis=1),
+            "test preparation course": pd.crosstab(
+                df_subset["Class_lunch"], df_subset["test preparation course"]
+            ).apply(lambda r: r / r.sum(), axis=1),
+            "math score": pd.crosstab(
+                df_subset["Class_lunch"], df_subset["math score"]
+            ).apply(lambda r: r / r.sum(), axis=1),
+            "reading score": pd.crosstab(
+                df_subset["Class_lunch"], df_subset["reading score"]
+            ).apply(lambda r: r / r.sum(), axis=1),
+            "writing score": pd.crosstab(
+                df_subset["Class_lunch"], df_subset["writing score"]
+            ).apply(lambda r: r / r.sum(), axis=1),
+        }
 
-    col10, col11 = st.columns(2)
+        col10, col11 = st.columns(2)
 
-    with col10:
-        st.write("Parental level of education:")
-        st.write(training_results["parental level of education"])
+        with col10:
+            st.write("Parental level of education:")
+            st.write(training_results["parental level of education"])
 
-        st.write("Test preparation course:")
-        st.write(training_results["test preparation course"])
+            st.write("Test preparation course:")
+            st.write(training_results["test preparation course"])
 
-    with col11:
-        st.write("Math score:")
-        st.write(training_results["math score"])
+        with col11:
+            st.write("Math score:")
+            st.write(training_results["math score"])
 
-        st.write("Reading score:")
-        st.write(training_results["reading score"])
+            st.write("Reading score:")
+            st.write(training_results["reading score"])
 
-        st.write("Writing score:")
-        st.write(training_results["writing score"])
+            st.write("Writing score:")
+            st.write(training_results["writing score"])
