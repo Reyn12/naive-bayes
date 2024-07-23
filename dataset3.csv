@@ -1,0 +1,1001 @@
+parental level of education;test preparation course;math score;reading score;writing score;Class_lunch
+some high school;completed;E;E;E;free/reduced
+some college;completed;D;C;B;free/reduced
+associate's degree;completed;D;C;D;free/reduced
+some high school;completed;E;B;C;free/reduced
+some college;completed;D;C;C;free/reduced
+associate's degree;completed;A;A;A;free/reduced
+associate's degree;completed;B;B;A;free/reduced
+some college;completed;D;C;B;free/reduced
+some high school;completed;C;C;C;free/reduced
+some college;completed;A;A;A;free/reduced
+some high school;completed;D;C;D;free/reduced
+high school;completed;C;C;C;free/reduced
+high school;completed;C;D;C;free/reduced
+some college;completed;E;E;E;free/reduced
+associate's degree;completed;A;A;A;free/reduced
+some high school;completed;E;D;E;free/reduced
+associate's degree;completed;A;A;A;free/reduced
+some college;completed;D;C;C;free/reduced
+high school;completed;B;B;A;free/reduced
+some college;completed;D;B;C;free/reduced
+bachelor's degree;completed;E;D;D;free/reduced
+associate's degree;completed;B;C;C;free/reduced
+high school;completed;D;D;E;free/reduced
+some college;completed;D;A;A;free/reduced
+associate's degree;completed;B;A;B;free/reduced
+some college;completed;D;D;D;free/reduced
+bachelor's degree;completed;B;A;A;free/reduced
+some college;completed;E;D;C;free/reduced
+bachelor's degree;completed;C;B;C;free/reduced
+high school;completed;E;B;C;free/reduced
+some high school;completed;B;B;C;free/reduced
+some high school;completed;D;D;E;free/reduced
+bachelor's degree;completed;D;C;B;free/reduced
+some college;completed;D;D;D;free/reduced
+some high school;completed;D;C;C;free/reduced
+associate's degree;completed;A;A;B;free/reduced
+some college;completed;D;C;C;free/reduced
+some high school;completed;D;C;C;free/reduced
+some high school;completed;B;C;C;free/reduced
+some college;completed;C;C;D;free/reduced
+some college;completed;D;C;D;free/reduced
+some high school;completed;E;E;E;free/reduced
+some college;completed;E;E;D;free/reduced
+some college;completed;B;A;A;free/reduced
+some college;completed;C;B;C;free/reduced
+some college;completed;A;A;A;free/reduced
+high school;completed;E;E;D;free/reduced
+some high school;completed;E;D;D;free/reduced
+associate's degree;completed;A;A;A;free/reduced
+associate's degree;completed;E;C;D;free/reduced
+some college;completed;B;A;A;free/reduced
+some college;completed;A;C;C;free/reduced
+some high school;completed;D;B;B;free/reduced
+master's degree;completed;A;A;A;free/reduced
+associate's degree;completed;B;B;B;free/reduced
+some high school;completed;D;C;C;free/reduced
+high school;completed;E;D;D;free/reduced
+master's degree;completed;A;B;A;free/reduced
+high school;completed;B;A;A;free/reduced
+high school;completed;A;A;B;free/reduced
+high school;completed;A;B;A;free/reduced
+high school;completed;C;C;C;free/reduced
+associate's degree;completed;C;A;A;free/reduced
+master's degree;completed;C;C;C;free/reduced
+some college;completed;D;C;D;free/reduced
+associate's degree;completed;A;B;C;free/reduced
+associate's degree;completed;E;B;C;free/reduced
+some high school;completed;E;D;E;free/reduced
+some college;completed;E;C;C;free/reduced
+some college;completed;D;C;B;free/reduced
+some college;completed;B;A;B;free/reduced
+some college;completed;D;C;B;free/reduced
+some college;completed;A;B;A;free/reduced
+associate's degree;completed;E;E;E;free/reduced
+some high school;completed;D;C;C;free/reduced
+some high school;completed;E;E;E;free/reduced
+high school;completed;D;C;D;free/reduced
+some college;completed;D;C;C;free/reduced
+high school;completed;B;A;A;free/reduced
+high school;completed;D;C;C;free/reduced
+associate's degree;completed;B;A;A;free/reduced
+associate's degree;completed;C;D;C;free/reduced
+bachelor's degree;completed;E;D;D;free/reduced
+some college;completed;C;C;B;free/reduced
+associate's degree;completed;B;A;A;free/reduced
+some high school;completed;D;C;C;free/reduced
+associate's degree;completed;C;C;C;free/reduced
+associate's degree;completed;E;D;D;free/reduced
+bachelor's degree;completed;D;C;C;free/reduced
+high school;completed;C;B;B;free/reduced
+some high school;completed;B;B;B;free/reduced
+high school;completed;C;A;A;free/reduced
+some college;completed;B;C;C;free/reduced
+some college;completed;C;B;B;free/reduced
+associate's degree;completed;D;B;B;free/reduced
+associate's degree;completed;D;E;D;free/reduced
+some college;completed;E;E;E;free/reduced
+some college;completed;D;B;B;free/reduced
+high school;completed;C;C;D;free/reduced
+bachelor's degree;completed;C;B;C;free/reduced
+high school;completed;B;A;B;free/reduced
+associate's degree;completed;A;B;B;free/reduced
+some high school;completed;E;D;E;free/reduced
+some high school;completed;D;B;C;free/reduced
+some college;completed;E;E;E;free/reduced
+some high school;completed;D;D;C;free/reduced
+bachelor's degree;completed;D;C;C;free/reduced
+master's degree;completed;C;B;B;free/reduced
+high school;completed;A;A;B;free/reduced
+associate's degree;completed;A;A;A;free/reduced
+high school;completed;C;C;C;standard
+associate's degree;completed;B;B;C;standard
+some college;completed;A;A;A;standard
+some college;completed;A;A;A;standard
+high school;completed;A;A;A;standard
+associate's degree;completed;B;A;A;standard
+high school;completed;B;B;B;standard
+some high school;completed;A;A;A;standard
+associate's degree;completed;D;C;C;standard
+some college;completed;B;C;B;standard
+high school;completed;B;A;A;standard
+associate's degree;completed;C;C;B;standard
+bachelor's degree;completed;B;A;A;standard
+some college;completed;D;B;B;standard
+high school;completed;A;B;A;standard
+some high school;completed;C;B;B;standard
+some college;completed;D;D;C;standard
+bachelor's degree;completed;C;A;A;standard
+associate's degree;completed;A;A;A;standard
+some high school;completed;C;C;C;standard
+bachelor's degree;completed;B;A;B;standard
+master's degree;completed;A;A;A;standard
+associate's degree;completed;D;C;B;standard
+some high school;completed;B;B;A;standard
+high school;completed;B;B;B;standard
+bachelor's degree;completed;A;A;A;standard
+high school;completed;D;C;C;standard
+associate's degree;completed;A;A;A;standard
+some college;completed;B;B;B;standard
+some college;completed;B;A;A;standard
+associate's degree;completed;B;B;B;standard
+associate's degree;completed;D;D;D;standard
+some high school;completed;B;A;A;standard
+high school;completed;D;B;B;standard
+bachelor's degree;completed;B;A;A;standard
+bachelor's degree;completed;D;D;C;standard
+some high school;completed;E;E;E;standard
+some college;completed;A;A;A;standard
+high school;completed;C;C;C;standard
+some college;completed;B;A;B;standard
+associate's degree;completed;E;C;C;standard
+master's degree;completed;A;B;C;standard
+some high school;completed;C;C;C;standard
+bachelor's degree;completed;A;A;A;standard
+some college;completed;C;B;A;standard
+associate's degree;completed;A;A;A;standard
+some high school;completed;C;B;B;standard
+bachelor's degree;completed;C;B;C;standard
+bachelor's degree;completed;B;A;A;standard
+some high school;completed;D;C;C;standard
+some college;completed;A;B;B;standard
+high school;completed;A;A;A;standard
+associate's degree;completed;B;A;A;standard
+some high school;completed;D;D;D;standard
+associate's degree;completed;B;A;A;standard
+associate's degree;completed;D;C;C;standard
+associate's degree;completed;D;C;C;standard
+some high school;completed;E;C;C;standard
+some high school;completed;B;B;B;standard
+master's degree;completed;B;B;A;standard
+some college;completed;C;B;C;standard
+some high school;completed;C;A;B;standard
+associate's degree;completed;C;C;B;standard
+associate's degree;completed;A;A;A;standard
+bachelor's degree;completed;A;B;B;standard
+associate's degree;completed;B;B;A;standard
+associate's degree;completed;D;D;D;standard
+some high school;completed;A;A;A;standard
+high school;completed;B;B;C;standard
+some high school;completed;A;A;A;standard
+high school;completed;B;B;C;standard
+associate's degree;completed;A;A;A;standard
+high school;completed;C;C;D;standard
+bachelor's degree;completed;B;A;B;standard
+some college;completed;A;B;A;standard
+associate's degree;completed;A;A;A;standard
+high school;completed;D;C;C;standard
+associate's degree;completed;A;A;A;standard
+associate's degree;completed;C;C;C;standard
+associate's degree;completed;C;B;B;standard
+high school;completed;C;B;A;standard
+high school;completed;A;A;B;standard
+some high school;completed;B;A;A;standard
+bachelor's degree;completed;C;B;A;standard
+some high school;completed;D;C;C;standard
+some college;completed;B;A;B;standard
+some high school;completed;A;B;B;standard
+some college;completed;C;B;B;standard
+bachelor's degree;completed;A;A;A;standard
+high school;completed;A;A;A;standard
+some high school;completed;C;B;B;standard
+associate's degree;completed;A;A;A;standard
+high school;completed;B;A;B;standard
+associate's degree;completed;C;A;A;standard
+bachelor's degree;completed;A;B;A;standard
+some college;completed;B;B;B;standard
+associate's degree;completed;C;B;C;standard
+some high school;completed;D;B;B;standard
+some college;completed;C;C;C;standard
+associate's degree;completed;D;C;C;standard
+some college;completed;A;B;B;standard
+some college;completed;B;A;A;standard
+high school;completed;D;C;C;standard
+master's degree;completed;A;A;A;standard
+bachelor's degree;completed;A;A;A;standard
+high school;completed;D;C;C;standard
+some high school;completed;B;A;A;standard
+associate's degree;completed;B;B;B;standard
+some college;completed;A;A;A;standard
+some high school;completed;D;D;D;standard
+some high school;completed;C;C;D;standard
+bachelor's degree;completed;E;C;C;standard
+some college;completed;A;B;B;standard
+master's degree;completed;D;C;B;standard
+bachelor's degree;completed;A;A;A;standard
+associate's degree;completed;A;A;A;standard
+master's degree;completed;B;B;A;standard
+bachelor's degree;completed;C;A;A;standard
+some college;completed;A;A;A;standard
+some high school;completed;C;B;B;standard
+associate's degree;completed;B;B;B;standard
+some college;completed;B;B;B;standard
+associate's degree;completed;C;D;D;standard
+associate's degree;completed;A;B;B;standard
+high school;completed;C;D;C;standard
+some college;completed;A;A;A;standard
+some college;completed;B;A;A;standard
+some college;completed;C;B;A;standard
+high school;completed;A;A;A;standard
+bachelor's degree;completed;A;A;A;standard
+some college;completed;D;D;D;standard
+bachelor's degree;completed;D;C;B;standard
+high school;completed;D;D;C;standard
+master's degree;completed;D;B;B;standard
+associate's degree;completed;A;A;A;standard
+bachelor's degree;completed;A;A;A;standard
+some high school;completed;B;A;A;standard
+associate's degree;completed;C;B;B;standard
+bachelor's degree;completed;A;A;A;standard
+high school;completed;C;A;B;standard
+high school;completed;B;A;A;standard
+some college;completed;B;A;A;standard
+master's degree;completed;A;A;A;standard
+master's degree;completed;A;A;A;standard
+high school;completed;B;B;B;standard
+some college;completed;C;C;B;standard
+associate's degree;completed;A;A;A;standard
+some high school;completed;A;A;A;standard
+associate's degree;completed;B;A;B;standard
+high school;completed;A;A;A;standard
+some college;completed;C;B;B;standard
+some college;completed;C;A;A;standard
+high school;completed;D;D;D;standard
+associate's degree;completed;B;C;B;standard
+bachelor's degree;completed;A;A;A;standard
+some college;completed;A;A;A;standard
+some high school;completed;C;C;C;standard
+some high school;completed;D;C;C;standard
+some high school;completed;E;E;E;standard
+some high school;completed;C;B;B;standard
+some college;completed;A;A;A;standard
+some college;completed;A;A;A;standard
+some high school;completed;E;D;D;standard
+master's degree;completed;A;A;A;standard
+associate's degree;completed;A;A;A;standard
+associate's degree;completed;B;C;B;standard
+bachelor's degree;completed;C;C;C;standard
+bachelor's degree;completed;B;A;A;standard
+master's degree;completed;A;A;A;standard
+some high school;completed;C;B;B;standard
+some high school;completed;C;D;E;standard
+master's degree;completed;B;A;A;standard
+associate's degree;completed;B;B;B;standard
+bachelor's degree;completed;A;A;A;standard
+associate's degree;completed;C;B;A;standard
+some high school;completed;C;B;B;standard
+high school;completed;D;C;B;standard
+some college;completed;C;B;B;standard
+bachelor's degree;completed;A;A;A;standard
+associate's degree;completed;C;C;C;standard
+high school;completed;B;A;A;standard
+some college;completed;C;A;A;standard
+high school;completed;E;D;C;standard
+associate's degree;completed;A;A;A;standard
+master's degree;completed;B;B;A;standard
+high school;completed;B;B;C;standard
+associate's degree;completed;A;A;A;standard
+bachelor's degree;completed;A;A;A;standard
+some high school;completed;A;A;A;standard
+some college;completed;E;D;E;standard
+high school;completed;C;C;C;standard
+some college;completed;A;A;A;standard
+some college;completed;A;A;A;standard
+master's degree;completed;A;A;A;standard
+associate's degree;completed;B;B;A;standard
+some college;completed;B;B;B;standard
+bachelor's degree;completed;A;A;A;standard
+high school;completed;B;A;B;standard
+bachelor's degree;completed;A;A;A;standard
+some college;completed;B;B;B;standard
+high school;completed;C;B;C;standard
+some college;completed;B;B;A;standard
+some college;completed;B;C;B;standard
+associate's degree;completed;C;A;B;standard
+some college;completed;A;C;C;standard
+some college;completed;D;C;C;standard
+some high school;completed;B;A;A;standard
+some high school;completed;E;E;D;standard
+high school;completed;A;B;A;standard
+associate's degree;completed;D;B;B;standard
+high school;completed;D;C;B;standard
+some college;completed;E;C;C;standard
+some high school;completed;A;A;A;standard
+bachelor's degree;completed;B;C;B;standard
+associate's degree;completed;C;D;C;standard
+associate's degree;completed;A;B;A;standard
+high school;completed;C;B;B;standard
+master's degree;completed;A;A;A;standard
+associate's degree;completed;E;D;D;standard
+some high school;completed;E;E;E;standard
+some high school;completed;C;C;B;standard
+some high school;completed;A;A;A;standard
+some college;completed;B;B;B;standard
+some college;completed;C;D;C;standard
+some college;completed;C;D;C;standard
+some high school;none;E;D;D;free/reduced
+some college;none;D;D;D;free/reduced
+some college;none;E;E;E;free/reduced
+associate's degree;none;C;C;D;free/reduced
+associate's degree;none;E;E;E;free/reduced
+some college;none;E;E;E;free/reduced
+some college;none;E;D;D;free/reduced
+some high school;none;E;E;E;free/reduced
+high school;none;D;E;E;free/reduced
+some high school;none;E;D;D;free/reduced
+bachelor's degree;none;B;B;B;free/reduced
+high school;none;C;C;D;free/reduced
+master's degree;none;D;B;B;free/reduced
+associate's degree;none;C;C;D;free/reduced
+some high school;none;D;D;D;free/reduced
+high school;none;E;D;E;free/reduced
+high school;none;D;D;E;free/reduced
+some college;none;E;C;D;free/reduced
+some college;none;B;C;C;free/reduced
+some high school;none;E;E;E;free/reduced
+master's degree;none;B;B;C;free/reduced
+high school;none;B;A;A;free/reduced
+some high school;none;E;E;E;free/reduced
+associate's degree;none;D;D;D;free/reduced
+associate's degree;none;E;E;E;free/reduced
+some college;none;C;B;C;free/reduced
+some college;none;D;E;E;free/reduced
+master's degree;none;A;B;B;free/reduced
+high school;none;E;D;E;free/reduced
+some college;none;E;E;E;free/reduced
+bachelor's degree;none;E;E;E;free/reduced
+some college;none;E;C;C;free/reduced
+bachelor's degree;none;D;C;D;free/reduced
+some high school;none;B;B;C;free/reduced
+some college;none;D;E;E;free/reduced
+some high school;none;D;B;C;free/reduced
+associate's degree;none;C;C;D;free/reduced
+some college;none;C;B;A;free/reduced
+high school;none;D;D;D;free/reduced
+associate's degree;none;E;E;E;free/reduced
+high school;none;D;C;D;free/reduced
+associate's degree;none;D;C;D;free/reduced
+high school;none;C;C;D;free/reduced
+associate's degree;none;A;A;A;free/reduced
+associate's degree;none;A;A;A;free/reduced
+some high school;none;A;B;B;free/reduced
+associate's degree;none;C;C;C;free/reduced
+some college;none;D;D;D;free/reduced
+some high school;none;D;D;D;free/reduced
+some high school;none;C;C;D;free/reduced
+some high school;none;C;C;C;free/reduced
+some high school;none;E;E;E;free/reduced
+master's degree;none;D;D;D;free/reduced
+associate's degree;none;C;A;A;free/reduced
+bachelor's degree;none;D;D;D;free/reduced
+some college;none;B;A;B;free/reduced
+bachelor's degree;none;C;B;B;free/reduced
+some college;none;E;E;E;free/reduced
+associate's degree;none;B;A;A;free/reduced
+some college;none;D;C;B;free/reduced
+high school;none;D;C;D;free/reduced
+some high school;none;C;B;C;free/reduced
+high school;none;D;B;C;free/reduced
+some college;none;E;E;E;free/reduced
+bachelor's degree;none;E;E;E;free/reduced
+some high school;none;C;B;B;free/reduced
+high school;none;D;B;C;free/reduced
+some high school;none;D;E;E;free/reduced
+bachelor's degree;none;D;D;D;free/reduced
+some college;none;E;E;E;free/reduced
+some high school;none;E;E;E;free/reduced
+high school;none;D;C;E;free/reduced
+associate's degree;none;D;E;E;free/reduced
+some high school;none;C;A;A;free/reduced
+some college;none;E;C;D;free/reduced
+high school;none;E;E;E;free/reduced
+some high school;none;D;D;E;free/reduced
+associate's degree;none;C;C;D;free/reduced
+some college;none;C;D;D;free/reduced
+some high school;none;D;C;C;free/reduced
+some college;none;C;A;A;free/reduced
+some college;none;E;D;E;free/reduced
+associate's degree;none;D;C;D;free/reduced
+some high school;none;D;C;D;free/reduced
+high school;none;B;B;C;free/reduced
+some college;none;E;D;E;free/reduced
+some high school;none;A;A;A;free/reduced
+some high school;none;E;D;D;free/reduced
+bachelor's degree;none;B;A;B;free/reduced
+high school;none;E;D;D;free/reduced
+some college;none;E;E;E;free/reduced
+some college;none;C;D;D;free/reduced
+bachelor's degree;none;C;B;B;free/reduced
+master's degree;none;D;D;C;free/reduced
+some college;none;B;C;D;free/reduced
+some high school;none;E;E;E;free/reduced
+some college;none;E;E;E;free/reduced
+master's degree;none;C;C;C;free/reduced
+associate's degree;none;D;D;E;free/reduced
+associate's degree;none;C;B;B;free/reduced
+associate's degree;none;C;C;C;free/reduced
+some college;none;A;B;B;free/reduced
+high school;none;D;D;D;free/reduced
+master's degree;none;D;E;E;free/reduced
+bachelor's degree;none;C;B;B;free/reduced
+some high school;none;E;C;D;free/reduced
+some high school;none;A;A;B;free/reduced
+bachelor's degree;none;C;C;D;free/reduced
+associate's degree;none;C;E;E;free/reduced
+bachelor's degree;none;B;B;A;free/reduced
+master's degree;none;A;A;A;free/reduced
+some college;none;B;B;A;free/reduced
+associate's degree;none;D;C;D;free/reduced
+high school;none;C;C;D;free/reduced
+some high school;none;E;E;E;free/reduced
+some college;none;B;C;C;free/reduced
+high school;none;D;C;C;free/reduced
+some college;none;A;B;B;free/reduced
+bachelor's degree;none;C;D;D;free/reduced
+some college;none;E;E;E;free/reduced
+master's degree;none;D;C;C;free/reduced
+some college;none;E;D;D;free/reduced
+bachelor's degree;none;A;A;A;free/reduced
+bachelor's degree;none;B;C;C;free/reduced
+some college;none;A;A;A;free/reduced
+some college;none;D;D;D;free/reduced
+associate's degree;none;E;E;E;free/reduced
+master's degree;none;B;C;C;free/reduced
+bachelor's degree;none;E;D;E;free/reduced
+bachelor's degree;none;E;E;E;free/reduced
+some college;none;C;C;C;free/reduced
+high school;none;D;E;E;free/reduced
+some college;none;C;D;D;free/reduced
+high school;none;E;E;E;free/reduced
+associate's degree;none;C;C;D;free/reduced
+associate's degree;none;D;D;E;free/reduced
+some college;none;C;B;B;free/reduced
+high school;none;E;E;D;free/reduced
+some college;none;C;B;C;free/reduced
+high school;none;D;B;B;free/reduced
+associate's degree;none;A;B;B;free/reduced
+some high school;none;E;E;E;free/reduced
+some college;none;E;C;D;free/reduced
+associate's degree;none;B;B;C;free/reduced
+associate's degree;none;D;D;D;free/reduced
+bachelor's degree;none;C;C;C;free/reduced
+some high school;none;E;C;D;free/reduced
+some college;none;E;E;D;free/reduced
+master's degree;none;E;D;D;free/reduced
+associate's degree;none;C;B;B;free/reduced
+bachelor's degree;none;D;C;D;free/reduced
+high school;none;D;D;D;free/reduced
+bachelor's degree;none;C;D;D;free/reduced
+high school;none;E;E;E;free/reduced
+some college;none;D;E;E;free/reduced
+some high school;none;D;E;E;free/reduced
+high school;none;D;C;C;free/reduced
+high school;none;C;C;C;free/reduced
+some high school;none;E;E;E;free/reduced
+associate's degree;none;D;C;C;free/reduced
+associate's degree;none;C;C;C;free/reduced
+associate's degree;none;D;E;E;free/reduced
+high school;none;C;B;C;free/reduced
+associate's degree;none;C;B;C;free/reduced
+some college;none;E;E;E;free/reduced
+associate's degree;none;C;A;A;free/reduced
+some high school;none;E;E;E;free/reduced
+associate's degree;none;C;C;C;free/reduced
+high school;none;A;A;B;free/reduced
+high school;none;E;E;E;free/reduced
+some college;none;E;D;E;free/reduced
+high school;none;C;C;C;free/reduced
+some high school;none;E;E;E;free/reduced
+some college;none;A;A;A;free/reduced
+associate's degree;none;B;C;C;free/reduced
+some high school;none;D;D;D;free/reduced
+associate's degree;none;A;A;B;free/reduced
+high school;none;E;E;E;free/reduced
+high school;none;D;C;C;free/reduced
+associate's degree;none;C;D;D;free/reduced
+some college;none;C;A;A;free/reduced
+high school;none;C;C;C;free/reduced
+high school;none;D;C;C;free/reduced
+some college;none;E;E;E;free/reduced
+some high school;none;B;B;C;free/reduced
+some college;none;B;C;C;free/reduced
+some high school;none;E;E;E;free/reduced
+high school;none;E;E;E;free/reduced
+master's degree;none;E;D;E;free/reduced
+associate's degree;none;E;D;E;free/reduced
+some high school;none;C;D;C;free/reduced
+master's degree;none;C;B;A;free/reduced
+master's degree;none;E;D;E;free/reduced
+high school;none;C;D;D;free/reduced
+associate's degree;none;D;B;B;free/reduced
+master's degree;none;C;A;A;free/reduced
+master's degree;none;D;C;D;free/reduced
+some college;none;D;B;C;free/reduced
+associate's degree;none;C;A;B;free/reduced
+high school;none;E;E;E;free/reduced
+master's degree;none;E;E;E;free/reduced
+some college;none;E;E;E;free/reduced
+associate's degree;none;D;E;E;free/reduced
+associate's degree;none;B;B;C;free/reduced
+associate's degree;none;C;B;B;free/reduced
+some high school;none;C;D;D;free/reduced
+bachelor's degree;none;D;A;A;free/reduced
+master's degree;none;D;C;D;free/reduced
+high school;none;E;D;D;free/reduced
+some high school;none;D;D;D;free/reduced
+high school;none;E;E;E;free/reduced
+associate's degree;none;B;B;C;free/reduced
+some college;none;C;B;A;free/reduced
+high school;none;D;D;D;free/reduced
+some college;none;D;E;E;free/reduced
+high school;none;B;C;C;free/reduced
+some high school;none;D;C;C;free/reduced
+some high school;none;E;E;E;free/reduced
+high school;none;C;C;C;free/reduced
+high school;none;D;C;D;free/reduced
+bachelor's degree;none;A;C;B;free/reduced
+some high school;none;E;C;C;free/reduced
+master's degree;none;D;C;C;free/reduced
+some college;none;C;C;C;free/reduced
+high school;none;C;B;C;free/reduced
+associate's degree;none;E;E;E;free/reduced
+associate's degree;none;D;C;C;free/reduced
+high school;none;E;E;E;free/reduced
+bachelor's degree;none;C;C;D;free/reduced
+associate's degree;none;B;B;C;free/reduced
+some college;none;C;C;D;free/reduced
+bachelor's degree;none;B;D;D;free/reduced
+master's degree;none;A;A;A;free/reduced
+some high school;none;E;D;E;free/reduced
+high school;none;D;D;E;free/reduced
+some high school;none;E;D;E;free/reduced
+some college;none;B;A;B;free/reduced
+some high school;none;E;E;E;free/reduced
+high school;none;B;B;C;standard
+high school;none;C;B;B;standard
+bachelor's degree;none;C;D;C;standard
+high school;none;C;D;C;standard
+high school;none;D;E;E;standard
+associate's degree;none;A;B;A;standard
+associate's degree;none;D;D;D;standard
+some high school;none;D;D;D;standard
+high school;none;B;C;D;standard
+some college;none;A;B;B;standard
+bachelor's degree;none;C;B;B;standard
+associate's degree;none;A;A;B;standard
+high school;none;B;C;C;standard
+master's degree;none;D;C;C;standard
+high school;none;A;A;A;standard
+bachelor's degree;none;D;E;D;standard
+high school;none;C;B;B;standard
+high school;none;C;C;C;standard
+associate's degree;none;B;A;A;standard
+some high school;none;C;D;E;standard
+some high school;none;D;C;D;standard
+high school;none;B;D;D;standard
+high school;none;B;C;D;standard
+high school;none;D;C;D;standard
+associate's degree;none;D;D;E;standard
+some college;none;E;C;C;standard
+high school;none;B;B;C;standard
+some college;none;E;C;D;standard
+associate's degree;none;B;B;B;standard
+some high school;none;D;E;E;standard
+bachelor's degree;none;E;D;C;standard
+some high school;none;D;B;C;standard
+some college;none;A;A;A;standard
+some college;none;D;D;C;standard
+high school;none;B;B;B;standard
+some high school;none;B;B;C;standard
+master's degree;none;A;A;A;standard
+some college;none;C;D;E;standard
+associate's degree;none;D;D;D;standard
+high school;none;B;B;B;standard
+high school;none;C;C;C;standard
+some college;none;E;D;D;standard
+bachelor's degree;none;C;B;A;standard
+high school;none;A;B;B;standard
+bachelor's degree;none;D;E;E;standard
+associate's degree;none;A;B;B;standard
+some high school;none;E;D;E;standard
+master's degree;none;C;A;B;standard
+high school;none;B;B;B;standard
+associate's degree;none;B;B;A;standard
+master's degree;none;C;D;D;standard
+associate's degree;none;B;B;C;standard
+some high school;none;E;D;E;standard
+some college;none;C;C;D;standard
+associate's degree;none;C;D;D;standard
+some college;none;D;D;D;standard
+bachelor's degree;none;A;A;A;standard
+associate's degree;none;D;C;D;standard
+some college;none;D;D;E;standard
+associate's degree;none;C;B;B;standard
+bachelor's degree;none;C;C;B;standard
+some college;none;E;E;E;standard
+bachelor's degree;none;A;A;A;standard
+bachelor's degree;none;C;C;D;standard
+master's degree;none;A;A;A;standard
+high school;none;A;A;A;standard
+high school;none;C;D;D;standard
+some college;none;B;B;B;standard
+bachelor's degree;none;D;D;D;standard
+some high school;none;D;C;C;standard
+some college;none;E;D;E;standard
+bachelor's degree;none;A;A;A;standard
+associate's degree;none;C;A;B;standard
+master's degree;none;A;A;A;standard
+high school;none;B;B;C;standard
+high school;none;B;C;C;standard
+some high school;none;E;D;D;standard
+bachelor's degree;none;C;C;C;standard
+bachelor's degree;none;D;E;E;standard
+high school;none;B;C;C;standard
+associate's degree;none;D;D;E;standard
+some college;none;B;C;C;standard
+some college;none;A;B;A;standard
+some college;none;B;A;A;standard
+associate's degree;none;C;C;C;standard
+associate's degree;none;A;A;A;standard
+some high school;none;C;C;C;standard
+associate's degree;none;D;B;C;standard
+associate's degree;none;C;C;C;standard
+some college;none;A;A;A;standard
+some high school;none;E;E;E;standard
+master's degree;none;B;B;A;standard
+bachelor's degree;none;A;A;A;standard
+some high school;none;A;C;B;standard
+high school;none;B;A;A;standard
+high school;none;B;A;B;standard
+some college;none;A;B;C;standard
+some college;none;B;B;B;standard
+bachelor's degree;none;D;B;A;standard
+bachelor's degree;none;D;C;C;standard
+high school;none;A;A;A;standard
+associate's degree;none;B;C;C;standard
+some college;none;B;A;A;standard
+some high school;none;C;C;D;standard
+some college;none;C;C;C;standard
+some high school;none;E;E;E;standard
+high school;none;C;B;B;standard
+some high school;none;C;B;C;standard
+some high school;none;A;C;C;standard
+some high school;none;C;C;C;standard
+associate's degree;none;D;B;C;standard
+some high school;none;D;C;D;standard
+bachelor's degree;none;A;B;B;standard
+some high school;none;C;B;C;standard
+some high school;none;D;B;C;standard
+high school;none;E;E;D;standard
+some high school;none;C;D;D;standard
+associate's degree;none;C;C;C;standard
+some high school;none;B;B;C;standard
+associate's degree;none;B;B;C;standard
+associate's degree;none;C;B;B;standard
+some college;none;D;D;C;standard
+some college;none;C;B;B;standard
+some high school;none;B;B;B;standard
+some high school;none;D;C;B;standard
+high school;none;A;A;A;standard
+some high school;none;B;A;B;standard
+associate's degree;none;B;B;B;standard
+high school;none;E;E;E;standard
+some high school;none;A;A;A;standard
+associate's degree;none;B;A;A;standard
+high school;none;A;A;A;standard
+some college;none;D;E;E;standard
+associate's degree;none;B;B;B;standard
+some high school;none;B;A;A;standard
+high school;none;C;D;D;standard
+high school;none;E;E;E;standard
+some college;none;B;C;C;standard
+bachelor's degree;none;B;C;C;standard
+some college;none;D;D;D;standard
+high school;none;C;C;C;standard
+master's degree;none;C;C;C;standard
+bachelor's degree;none;C;A;B;standard
+some high school;none;E;D;D;standard
+associate's degree;none;B;C;C;standard
+some college;none;A;A;A;standard
+some college;none;A;A;B;standard
+high school;none;E;D;D;standard
+some high school;none;A;A;A;standard
+some high school;none;C;C;C;standard
+high school;none;C;C;D;standard
+some college;none;B;C;B;standard
+some college;none;D;D;E;standard
+some high school;none;A;A;A;standard
+high school;none;E;E;E;standard
+associate's degree;none;D;C;C;standard
+some high school;none;D;C;D;standard
+some high school;none;D;C;C;standard
+master's degree;none;B;B;A;standard
+associate's degree;none;B;B;B;standard
+master's degree;none;E;D;E;standard
+high school;none;C;B;C;standard
+associate's degree;none;D;D;D;standard
+bachelor's degree;none;D;D;C;standard
+high school;none;B;B;C;standard
+associate's degree;none;D;C;C;standard
+some high school;none;C;C;C;standard
+high school;none;C;B;B;standard
+bachelor's degree;none;A;A;A;standard
+high school;none;A;A;A;standard
+some college;none;A;A;A;standard
+high school;none;E;D;E;standard
+some college;none;C;C;C;standard
+some high school;none;D;D;D;standard
+some high school;none;C;B;A;standard
+associate's degree;none;A;A;A;standard
+high school;none;B;B;B;standard
+associate's degree;none;B;C;D;standard
+some college;none;A;A;A;standard
+high school;none;D;E;E;standard
+some college;none;B;B;B;standard
+high school;none;A;B;D;standard
+some high school;none;C;C;C;standard
+high school;none;B;C;C;standard
+some high school;none;C;C;C;standard
+some college;none;B;C;D;standard
+bachelor's degree;none;D;B;C;standard
+some high school;none;B;B;C;standard
+associate's degree;none;B;B;B;standard
+high school;none;E;E;E;standard
+some college;none;B;A;B;standard
+associate's degree;none;A;C;B;standard
+bachelor's degree;none;A;A;A;standard
+bachelor's degree;none;A;B;B;standard
+associate's degree;none;C;C;C;standard
+some high school;none;A;A;A;standard
+some high school;none;C;B;C;standard
+some college;none;D;D;E;standard
+associate's degree;none;A;A;A;standard
+some college;none;D;E;E;standard
+high school;none;C;B;C;standard
+some high school;none;B;B;C;standard
+some college;none;C;B;B;standard
+high school;none;C;D;D;standard
+some high school;none;C;D;D;standard
+master's degree;none;B;A;A;standard
+some college;none;C;C;C;standard
+some college;none;B;D;D;standard
+some college;none;A;A;A;standard
+some college;none;A;A;B;standard
+associate's degree;none;C;B;C;standard
+some college;none;D;E;E;standard
+some college;none;C;B;C;standard
+some high school;none;B;A;A;standard
+master's degree;none;A;A;A;standard
+some high school;none;D;D;D;standard
+bachelor's degree;none;A;B;B;standard
+bachelor's degree;none;C;B;B;standard
+master's degree;none;A;C;B;standard
+some high school;none;E;E;E;standard
+some high school;none;B;B;B;standard
+some college;none;B;C;D;standard
+associate's degree;none;A;A;A;standard
+associate's degree;none;B;D;D;standard
+high school;none;B;A;B;standard
+associate's degree;none;A;A;A;standard
+some high school;none;A;B;C;standard
+some college;none;C;D;D;standard
+high school;none;C;C;B;standard
+some high school;none;A;A;A;standard
+associate's degree;none;B;B;B;standard
+some high school;none;B;A;B;standard
+associate's degree;none;D;D;E;standard
+high school;none;E;E;E;standard
+bachelor's degree;none;B;A;A;standard
+bachelor's degree;none;A;B;A;standard
+associate's degree;none;B;B;B;standard
+high school;none;C;A;B;standard
+some college;none;B;B;B;standard
+bachelor's degree;none;C;C;B;standard
+some college;none;A;A;A;standard
+associate's degree;none;C;B;B;standard
+high school;none;C;B;B;standard
+high school;none;C;A;A;standard
+some high school;none;E;D;D;standard
+some college;none;A;C;C;standard
+bachelor's degree;none;C;B;A;standard
+high school;none;E;E;D;standard
+high school;none;D;C;D;standard
+some high school;none;D;C;B;standard
+some college;none;B;B;A;standard
+some college;none;C;B;C;standard
+master's degree;none;C;D;C;standard
+associate's degree;none;C;B;B;standard
+associate's degree;none;A;B;B;standard
+bachelor's degree;none;A;A;A;standard
+some college;none;B;A;A;standard
+associate's degree;none;A;A;A;standard
+high school;none;C;B;C;standard
+some college;none;D;C;C;standard
+some college;none;E;D;D;standard
+some college;none;E;D;D;standard
+high school;none;C;B;B;standard
+high school;none;E;D;E;standard
+associate's degree;none;E;E;E;standard
+bachelor's degree;none;C;D;D;standard
+some high school;none;A;B;C;standard
+bachelor's degree;none;D;C;C;standard
+high school;none;D;B;C;standard
+high school;none;D;E;E;standard
+some high school;none;D;D;D;standard
+associate's degree;none;B;A;A;standard
+bachelor's degree;none;A;A;A;standard
+associate's degree;none;A;B;B;standard
+high school;none;B;D;D;standard
+some high school;none;D;C;D;standard
+master's degree;none;B;A;A;standard
+some college;none;C;C;C;standard
+high school;none;A;A;A;standard
+associate's degree;none;C;C;C;standard
+bachelor's degree;none;A;A;A;standard
+high school;none;B;B;C;standard
+high school;none;C;C;C;standard
+some high school;none;E;E;E;standard
+high school;none;A;B;B;standard
+associate's degree;none;D;D;D;standard
+some high school;none;D;C;B;standard
+high school;none;A;B;B;standard
+associate's degree;none;A;A;A;standard
+some high school;none;B;B;B;standard
+some high school;none;C;C;B;standard
+high school;none;C;D;E;standard
+some high school;none;D;E;E;standard
+high school;none;E;E;E;standard
+master's degree;none;B;A;A;standard
+master's degree;none;C;D;D;standard
+associate's degree;none;B;C;C;standard
+high school;none;C;B;B;standard
+some college;none;C;B;C;standard
+associate's degree;none;B;C;D;standard
+some high school;none;A;A;B;standard
+high school;none;A;A;A;standard
+some college;none;D;D;D;standard
+associate's degree;none;A;B;B;standard
+high school;none;A;C;B;standard
+some high school;none;B;B;C;standard
+high school;none;B;C;B;standard
+bachelor's degree;none;A;A;A;standard
+high school;none;A;A;A;standard
+some high school;none;A;C;D;standard
+high school;none;D;C;D;standard
+master's degree;none;D;D;D;standard
+some high school;none;B;C;D;standard
+associate's degree;none;E;E;E;standard
+bachelor's degree;none;A;A;A;standard
+high school;none;B;C;C;standard
+some college;none;C;C;B;standard
+associate's degree;none;A;A;A;standard
+associate's degree;none;A;A;A;standard
+high school;none;C;B;C;standard
+some college;none;D;D;D;standard
+some college;none;A;A;A;standard
+some college;none;B;B;B;standard
+high school;none;B;A;A;standard
+bachelor's degree;none;A;A;A;standard
+some college;none;B;B;C;standard
+high school;none;C;C;C;standard
+high school;none;C;A;B;standard
+master's degree;none;A;A;A;standard
+high school;none;B;C;D;standard
+master's degree;none;D;D;D;standard
+some high school;none;C;B;C;standard
+some college;none;B;A;A;standard
+some college;none;C;D;C;standard
+high school;none;A;A;B;standard
+associate's degree;none;B;B;C;standard
+bachelor's degree;none;B;A;A;standard
+bachelor's degree;none;A;A;A;standard
+some college;none;A;A;A;standard
+high school;none;C;C;D;standard
+some college;none;D;D;D;standard
+some high school;none;E;C;C;standard
+some college;none;D;E;E;standard
+high school;none;B;C;C;standard
+associate's degree;none;E;D;E;standard
+master's degree;none;C;B;C;standard
+some college;none;D;D;D;standard
+some high school;none;E;D;E;standard
+associate's degree;none;C;C;C;standard
+some college;none;C;C;C;standard
+some college;none;A;A;A;standard
+master's degree;none;B;B;B;standard
+some high school;none;D;B;B;standard
+some high school;none;B;A;B;standard
+high school;none;C;C;C;standard
+master's degree;none;C;C;C;standard
+master's degree;none;A;A;B;standard
+some college;none;B;B;A;standard
+some high school;none;B;A;B;standard
+some high school;none;C;C;C;standard
+associate's degree;none;C;C;C;standard
+high school;none;A;A;A;standard
+high school;none;A;A;A;standard
+some high school;none;D;D;D;standard
+master's degree;none;A;A;A;standard
+master's degree;none;A;A;A;standard
+some high school;none;A;A;A;standard
+bachelor's degree;none;A;A;A;standard
+some college;none;A;A;A;standard
+some college;none;C;B;C;standard
+bachelor's degree;none;B;D;D;standard
+high school;none;C;D;D;standard
+some college;none;C;E;D;standard
+bachelor's degree;none;B;D;D;standard
+bachelor's degree;none;B;C;C;standard
+high school;none;D;D;D;standard
+bachelor's degree;none;D;C;C;standard
+some high school;none;C;E;D;standard
+master's degree;none;A;A;A;standard
+associate's degree;none;D;C;D;standard
+some college;none;C;B;A;standard
+associate's degree;none;C;D;C;standard
+associate's degree;none;A;B;B;standard
+master's degree;none;B;A;A;standard
+some high school;none;D;D;E;standard
+associate's degree;none;B;A;B;standard
+high school;none;C;C;C;standard
+associate's degree;none;D;C;D;standard
+high school;none;B;C;C;standard
+high school;none;A;B;C;standard
+some high school;none;B;C;C;standard
+associate's degree;none;A;B;B;standard
+associate's degree;none;D;D;D;standard
+some college;none;D;D;D;standard
+associate's degree;none;C;C;C;standard
+some high school;none;D;C;C;standard
+associate's degree;none;B;B;C;standard
+associate's degree;none;C;D;D;standard
+master's degree;none;C;B;B;standard
+master's degree;none;C;C;C;standard
+some high school;none;A;B;B;standard
+high school;none;E;D;E;standard
+some college;none;B;B;B;standard
+some high school;none;D;D;C;standard
+bachelor's degree;none;E;C;D;standard
+high school;none;E;C;D;standard
+some college;none;E;D;D;standard
+master's degree;none;A;A;A;standard
+bachelor's degree;none;A;A;A;standard
+bachelor's degree;none;A;A;A;standard
+high school;none;C;D;D;standard
+some high school;none;C;D;E;standard
+associate's degree;none;A;B;B;standard
+associate's degree;none;B;B;C;standard
+some high school;none;D;D;D;standard
+associate's degree;none;B;B;C;standard
+some college;none;C;E;E;standard
+some high school;none;D;D;E;standard
+high school;none;C;B;B;standard
+associate's degree;none;B;B;C;standard
+some college;none;B;B;A;standard
+some college;none;C;D;D;standard
+associate's degree;none;A;A;A;standard
+some college;none;C;C;C;standard
+associate's degree;none;D;D;D;standard
+high school;none;B;C;C;standard
+some college;none;B;B;A;standard
