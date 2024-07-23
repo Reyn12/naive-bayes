@@ -1,9 +1,6 @@
 import streamlit as st
 import pandas as pd
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import LabelEncoder
-from sklearn.naive_bayes import GaussianNB
-from sklearn.metrics import accuracy_score, classification_report
+import numpy as np
 
 
 # Fungsi untuk mengubah nilai huruf ke nilai numerik
@@ -29,8 +26,8 @@ def calculate_all_contingency_tables(X_train, y_train, original_data, label_enco
     contingency_tables = {}
     for column in X_train.columns:
         if column in label_encoders:
-            decoded_index = label_encoders[column].inverse_transform(X_train[column])
-            decoded_columns = label_encoders["Class_lunch"].inverse_transform(y_train)
+            decoded_index = X_train[column].apply(lambda x: label_encoders[column][x])
+            decoded_columns = y_train.apply(lambda x: label_encoders["Class_lunch"][x])
             table = pd.crosstab(
                 index=pd.Series(decoded_index, name=original_data[column].name),
                 columns=pd.Series(decoded_columns, name="Class_lunch"),
@@ -42,7 +39,7 @@ def calculate_all_contingency_tables(X_train, y_train, original_data, label_enco
                 table = pd.crosstab(
                     index=pd.Series(decoded_index, name=original_data[column].name),
                     columns=pd.Series(
-                        label_encoders["Class_lunch"].inverse_transform(y_train),
+                        y_train.apply(lambda x: label_encoders["Class_lunch"][x]),
                         name="Class_lunch",
                     ),
                     margins=True,
@@ -56,35 +53,75 @@ def calculate_all_contingency_tables(X_train, y_train, original_data, label_enco
 
 
 # Fungsi untuk menghitung nilai posterior
-def calculate_posterior(model, X_new):
-    probabilities = model.predict_proba(X_new)
-    return probabilities
+def calculate_posterior_naive_bayes(X_new, class_stats, priors):
+    posteriors = {}
+    for cls in priors.index:
+        prior = np.log(priors[cls])
+        conditional = np.sum(
+            [
+                np.log(
+                    gaussian_prob(
+                        X_new[feature],
+                        class_stats[cls]["mean"][feature],
+                        class_stats[cls]["std"][feature],
+                    )
+                )
+                for feature in X_new.index
+            ]
+        )
+        posteriors[cls] = prior + conditional
+    return posteriors
 
 
 # Fungsi untuk mengubah laporan klasifikasi menjadi DataFrame
-def classification_report_to_df(report):
+def classification_report_to_df(y_true, y_pred, target_names):
     report_data = []
-    lines = report.split("\n")
-    for line in lines[2:]:
-        row = {}
-        row_data = line.split()
-        if len(row_data) == 0:  # Skip empty lines
-            continue
-        if len(row_data) == 5:
-            row["class"] = row_data[0]
-            row["precision"] = float(row_data[1])
-            row["recall"] = float(row_data[2])
-            row["f1-score"] = float(row_data[3])
-            row["support"] = int(row_data[4])
-        elif len(row_data) == 6:
-            row["class"] = " ".join(row_data[:2])
-            row["precision"] = float(row_data[2])
-            row["recall"] = float(row_data[3])
-            row["f1-score"] = float(row_data[4])
-            row["support"] = int(row_data[5])
-        report_data.append(row)
+    for label in np.unique(y_true):
+        precision = np.sum((y_pred == label) & (y_true == label)) / np.sum(
+            y_pred == label
+        )
+        recall = np.sum((y_pred == label) & (y_true == label)) / np.sum(y_true == label)
+        f1_score = (
+            2 * precision * recall / (precision + recall)
+            if (precision + recall) > 0
+            else 0
+        )
+        support = np.sum(y_true == label)
+        report_data.append(
+            {
+                "class": target_names[label],
+                "precision": precision,
+                "recall": recall,
+                "f1-score": f1_score,
+                "support": support,
+            }
+        )
     dataframe = pd.DataFrame.from_dict(report_data)
     return dataframe
+
+
+# Fungsi untuk menghitung mean dan std dev per kelas untuk fitur numerik
+def calculate_class_stats(X_train, y_train, classes):
+    class_stats = {}
+    for cls in classes:
+        cls_data = X_train[y_train == cls]
+        class_stats[cls] = {"mean": cls_data.mean(), "std": cls_data.std(ddof=0)}
+    return class_stats
+
+
+# Fungsi untuk menghitung probabilitas Gaussian
+def gaussian_prob(x, mean, std):
+    exponent = np.exp(-((x - mean) ** 2 / (2 * std**2)))
+    return (1 / (np.sqrt(2 * np.pi) * std)) * exponent
+
+
+# Fungsi manual untuk encoding label
+def manual_label_encoding(column):
+    unique_values = column.unique()
+    encoding_dict = {val: idx for idx, val in enumerate(unique_values)}
+    decoding_dict = {idx: val for val, idx in encoding_dict.items()}
+    encoded_column = column.map(encoding_dict)
+    return encoded_column, encoding_dict, decoding_dict
 
 
 # Load dataset
@@ -101,9 +138,8 @@ data["writing score"] = data["writing score"].apply(grade_to_numeric)
 
 label_encoders = {}
 for column in ["parental level of education", "test preparation course", "Class_lunch"]:
-    le = LabelEncoder()
-    data[column] = le.fit_transform(data[column])
-    label_encoders[column] = le
+    data[column], encoding_dict, decoding_dict = manual_label_encoding(data[column])
+    label_encoders[column] = decoding_dict
 
 # Sidebar
 with st.sidebar:
@@ -136,12 +172,8 @@ if page == "Simulasi Program":
     train_size = st.slider("Masukkan jumlah data Training (%)", 10, 90, 70)
     test_size = 100 - train_size
 
-    parental_levels = label_encoders["parental level of education"].inverse_transform(
-        data["parental level of education"].unique()
-    )
-    test_preparations = label_encoders["test preparation course"].inverse_transform(
-        data["test preparation course"].unique()
-    )
+    parental_levels = list(label_encoders["parental level of education"].values())
+    test_preparations = list(label_encoders["test preparation course"].values())
 
     # Arrange inputs in the desired layout
     col1, col2 = st.columns(2)
@@ -167,51 +199,62 @@ if page == "Simulasi Program":
         # Split data into training and testing
         X = data.drop("Class_lunch", axis=1)
         y = data["Class_lunch"]
-        X_train, X_test, y_train, y_test = train_test_split(
-            X, y, test_size=test_size / 100, random_state=42
-        )
 
-        # Train Naive Bayes model
-        model = GaussianNB()
-        model.fit(X_train, y_train)
+        # Manual split
+        split_idx = int(len(data) * (train_size / 100))
+        X_train, y_train = X[:split_idx], y[:split_idx]
+        X_test, y_test = X[split_idx:], y[split_idx:]
+
+        # Train Naive Bayes model manually
+        classes = np.unique(y_train)
+        priors = calculate_prior(y_train)
+        class_stats = calculate_class_stats(X_train, y_train, classes)
 
         # Encode the input data
         new_data = {
-            "parental level of education": label_encoders[
-                "parental level of education"
-            ].transform([parental_level])[0],
-            "test preparation course": label_encoders[
-                "test preparation course"
-            ].transform([test_preparation])[0],
+            "parental level of education": list(
+                label_encoders["parental level of education"].keys()
+            )[
+                list(label_encoders["parental level of education"].values()).index(
+                    parental_level
+                )
+            ],
+            "test preparation course": list(
+                label_encoders["test preparation course"].keys()
+            )[
+                list(label_encoders["test preparation course"].values()).index(
+                    test_preparation
+                )
+            ],
             "math score": grade_to_numeric(math_score),
             "reading score": grade_to_numeric(reading_score),
             "writing score": grade_to_numeric(writing_score),
         }
-        new_data_df = pd.DataFrame([new_data])
+        new_data_df = pd.Series(new_data)
 
         # Predict and calculate posterior
-        prediction = model.predict(new_data_df)[0]
-        prediction_label = label_encoders["Class_lunch"].inverse_transform(
-            [prediction]
-        )[0]
-        posterior = calculate_posterior(model, new_data_df)
-
-        # Calculate prior
-        prior = calculate_prior(y_train)
-        prior.index = label_encoders["Class_lunch"].inverse_transform(prior.index)
+        posteriors = calculate_posterior_naive_bayes(new_data_df, class_stats, priors)
+        prediction = max(posteriors, key=posteriors.get)
+        prediction_label = label_encoders["Class_lunch"][prediction]
 
         # Calculate all contingency tables
         contingency_tables = calculate_all_contingency_tables(
             X_train, y_train, original_data, label_encoders
         )
 
-        # Evaluate model
-        y_pred = model.predict(X_test)
-        accuracy = accuracy_score(y_test, y_pred)
-        report = classification_report(
-            y_test, y_pred, target_names=label_encoders["Class_lunch"].classes_
+        # Evaluate model manually
+        y_pred = []
+        for _, row in X_test.iterrows():
+            row_series = pd.Series(row)
+            posteriors = calculate_posterior_naive_bayes(
+                row_series, class_stats, priors
+            )
+            y_pred.append(max(posteriors, key=posteriors.get))
+
+        accuracy = np.mean(y_pred == y_test)
+        report_df = classification_report_to_df(
+            y_test, y_pred, list(label_encoders["Class_lunch"].values())
         )
-        report_df = classification_report_to_df(report)
 
         # Display results
         col1, col2 = st.columns(2)
@@ -232,13 +275,13 @@ if page == "Simulasi Program":
         col1, col2 = st.columns(2)
         with col1:
             st.write("### Nilai Prior")
-            st.write(prior)
+            st.write(priors)
 
         with col2:
             st.write("### Nilai Posterior")
             st.write(
                 pd.DataFrame(
-                    posterior, columns=label_encoders["Class_lunch"].classes_
+                    [posteriors], columns=list(label_encoders["Class_lunch"].values())
                 ).to_html(index=False),
                 unsafe_allow_html=True,
             )
