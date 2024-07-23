@@ -254,18 +254,22 @@ if page == "Simulasi Program":
         st.table(report_df)
 
 elif page == "Our Team":
-    st.title("Our Team")
+    st.title("Our Teams")
     st.markdown(
         """
-    **Kelompok: NAIVE BAYES**
+    **Kelompok : NAIVE BAYES**
 
     **10122002 - Muhammad Renaldi Maulana**
 
-    **10122020 - M Rizky Firdaus**
+    **10122024 - Dzaky Farras Fauzan**
+
+    **10122007 - Mochammad Rizky Firdaus**
+
+    **10122028 - Muhamad Hilmi Firdaus**
     """
     )
 
 elif page == "Dataset":
     st.title("Tampilan Data")
-    st.write("### Dataset Lengkap (1000 data)")
+    st.write("### Dataset Lengkap Exams (1000 data)")
     st.dataframe(original_data)
